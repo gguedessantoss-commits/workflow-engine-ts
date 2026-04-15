@@ -165,6 +165,7 @@ const demoGallery = [
 export default function HomePage() {
   const snapshot = buildControlTowerSnapshot();
   const heroStats = snapshot.dashboard.metrics.slice(0, 3);
+  const heroHotspots = snapshot.dashboard.hotspots.slice(0, 2);
   const productSignals = snapshot.dashboard.highlights;
   const featuredAutomations = snapshot.automations.slice(0, 4);
 
@@ -213,7 +214,7 @@ export default function HomePage() {
 
           <div className="landing-actions">
             <Link className="button button--primary" href="/dashboard">
-              Abrir studio
+              Abrir plataforma
             </Link>
             <a className="button button--ghost" href="#templates">
               Ver o que é possível criar
@@ -221,30 +222,52 @@ export default function HomePage() {
           </div>
         </div>
 
-        <Card className="landing-preview">
-          <span className="landing-preview__eyebrow">Definição do produto</span>
-          <strong>O que a Orquestra entrega</strong>
-          <p>
-            Uma plataforma B2B para modelar workflows, executar instâncias,
-            enxergar gargalos e explicar decisões sem depender de reconstrução
-            manual.
-          </p>
-          <ul>
-            {productSignals.map((signal) => (
-              <li key={signal}>{signal}</li>
-            ))}
-          </ul>
-        </Card>
-      </section>
-
-      <section className="hero-stat-grid">
-        {heroStats.map((stat) => (
-          <Card className="hero-stat" key={stat.label}>
-            <span className="hero-stat__label">{stat.label}</span>
-            <strong className="hero-stat__value">{stat.value}</strong>
-            <p>{stat.hint}</p>
+        <div className="landing-hero__aside">
+          <Card className="landing-preview">
+            <span className="landing-preview__eyebrow">
+              Leitura executiva do produto
+            </span>
+            <strong>O que a Orquestra entrega</strong>
+            <p>
+              Uma plataforma B2B para modelar workflows, executar instâncias,
+              enxergar gargalos e explicar decisões sem depender de reconstrução
+              manual.
+            </p>
+            <ul>
+              {productSignals.map((signal) => (
+                <li key={signal}>{signal}</li>
+              ))}
+            </ul>
           </Card>
-        ))}
+
+          <div className="hero-stat-grid">
+            {heroStats.map((stat) => (
+              <Card className="hero-stat" key={stat.label}>
+                <span className="hero-stat__label">{stat.label}</span>
+                <strong className="hero-stat__value">{stat.value}</strong>
+                <p>{stat.hint}</p>
+              </Card>
+            ))}
+          </div>
+
+          <Card className="hero-note-board">
+            <span className="landing-preview__eyebrow">
+              Onde a operação olha primeiro
+            </span>
+            {heroHotspots.map((hotspot) => (
+              <article className="hero-note-board__item" key={hotspot.id}>
+                <div>
+                  <strong>{hotspot.workflowName}</strong>
+                  <p>{hotspot.stepName}</p>
+                </div>
+                <div className="hero-note-board__meta">
+                  <span>{hotspot.queuedItems} itens</span>
+                  <span>{hotspot.averageWait}</span>
+                </div>
+              </article>
+            ))}
+          </Card>
+        </div>
       </section>
 
       <section className="section-shell" id="problem">

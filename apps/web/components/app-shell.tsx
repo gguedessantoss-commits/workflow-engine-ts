@@ -33,47 +33,12 @@ export function AppShell({ snapshot, children }: AppShellProps) {
 
   return (
     <div className="app-shell">
-      <aside className="app-sidebar">
-        <Link className="app-brand" href="/">
-          Orquestra
-        </Link>
-
-        <Card className="workspace-card">
-          <div className="workspace-card__header">
-            <span className="landing-preview__eyebrow">Ambiente ativo</span>
-            <Badge variant={getStatusVariant(snapshot.orchestrationStatus)}>
-              {snapshot.orchestrationStatus}
-            </Badge>
-          </div>
-
-          <strong className="workspace-card__title">
-            {snapshot.workspaceName}
-          </strong>
-          <p>{snapshot.workspaceNarrative}</p>
-
-          <div className="workspace-card__meta">
-            <span>{snapshot.sector}</span>
-            <span>{snapshot.coverageWindow}</span>
-          </div>
-        </Card>
-
-        <DashboardNav />
-
-        <Card className="sidebar-callout">
-          <span className="landing-preview__eyebrow">
-            Princípios de orquestração
-          </span>
-          <ul className="sidebar-callout__list">
-            {snapshot.orchestrationPrinciples.map((principle) => (
-              <li key={principle}>{principle}</li>
-            ))}
-          </ul>
-        </Card>
-      </aside>
-
-      <div className="app-main">
-        <section className="app-topbar">
-          <div>
+      <section className="app-topbar">
+        <div className="app-topbar__header">
+          <div className="app-topbar__intro">
+            <Link className="app-brand" href="/">
+              Orquestra
+            </Link>
             <p className="app-topbar__eyebrow">
               Torre de controle de workflows
             </p>
@@ -84,19 +49,53 @@ export function AppShell({ snapshot, children }: AppShellProps) {
             </p>
           </div>
 
-          <div className="app-topbar__metrics">
-            {metrics.map((metric) => (
-              <Card className="app-topbar__metric" key={metric.label}>
-                <span>{metric.label}</span>
-                <strong>{metric.value}</strong>
-                <p>{metric.hint}</p>
-              </Card>
-            ))}
-          </div>
-        </section>
+          <Card className="workspace-card">
+            <div className="workspace-card__header">
+              <span className="landing-preview__eyebrow">Ambiente ativo</span>
+              <Badge variant={getStatusVariant(snapshot.orchestrationStatus)}>
+                {snapshot.orchestrationStatus}
+              </Badge>
+            </div>
 
-        {children}
-      </div>
+            <strong className="workspace-card__title">
+              {snapshot.workspaceName}
+            </strong>
+            <p>{snapshot.workspaceNarrative}</p>
+
+            <div className="workspace-card__meta">
+              <span>{snapshot.sector}</span>
+              <span>{snapshot.coverageWindow}</span>
+            </div>
+          </Card>
+        </div>
+
+        <div className="app-topbar__footer">
+          <DashboardNav />
+
+          <Card className="sidebar-callout">
+            <span className="landing-preview__eyebrow">
+              Princípios de orquestração
+            </span>
+            <ul className="sidebar-callout__list">
+              {snapshot.orchestrationPrinciples.map((principle) => (
+                <li key={principle}>{principle}</li>
+              ))}
+            </ul>
+          </Card>
+        </div>
+
+        <div className="app-topbar__metrics">
+          {metrics.map((metric) => (
+            <Card className="app-topbar__metric" key={metric.label}>
+              <span>{metric.label}</span>
+              <strong>{metric.value}</strong>
+              <p>{metric.hint}</p>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      <div className="app-main">{children}</div>
     </div>
   );
 }
