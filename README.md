@@ -4,6 +4,11 @@ Orquestra é a camada de produto construída sobre o `workflow-engine-ts`: uma p
 
 Em vez de apresentar só o motor de workflow em isolamento, este repositório agora demonstra como o domínio pode ser empacotado como produto, com landing page, control tower, templates, instâncias em execução, automações e trilha de auditoria.
 
+## Demo ao vivo
+
+- landing page: [orquestra-workflows.vercel.app](https://orquestra-workflows.vercel.app)
+- dashboard: [orquestra-workflows.vercel.app/dashboard](https://orquestra-workflows.vercel.app/dashboard)
+
 ## O que este projeto demonstra
 
 - modelagem de workflows com domínio tipado
