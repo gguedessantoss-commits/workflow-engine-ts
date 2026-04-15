@@ -1,32 +1,29 @@
 {
-  "name": "senior-workflow-ts",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "dev": "tsx src/main/index.ts",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "test": "vitest",
-    "test:run": "vitest run"
+  "name": "workflow-engine-ts",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=20.9.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "build:packages": "pnpm --filter @workflow-engine/core build && pnpm --filter @workflow-engine/ui build",
+    "dev": "pnpm build:packages && turbo dev --parallel",
+    "build": "turbo build",
+    "typecheck": "pnpm build:packages && turbo typecheck",
+    "test": "turbo test",
+    "lint": "biome check .",
+    "format": "biome format --write ."
+  },
   "devDependencies": {
-    "@eslint/js": "^9.39.4",
+    "@biomejs/biome": "^2.4.12",
     "@types/node": "^25.6.0",
-    "eslint": "^9.39.4",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-import": "^2.32.0",
-    "globals": "^17.5.0",
-    "prettier": "^3.8.2",
-    "ts-node": "^10.9.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "tsup": "^8.5.1",
     "tsx": "^4.21.0",
+    "turbo": "^2.9.6",
     "typescript": "^6.0.2",
-    "typescript-eslint": "^8.58.1",
     "vitest": "^4.1.4"
-    
   }
 }

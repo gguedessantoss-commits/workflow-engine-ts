@@ -1,218 +1,63 @@
-# 🚀 Workflow Engine (TypeScript)
+# Orquestra
 
-Uma workflow engine desenvolvida em TypeScript com foco em arquitetura limpa, domínio bem definido e processamento orientado a eventos.
+Orquestra é a camada de produto construída sobre o `workflow-engine-ts`: uma plataforma de orquestração de workflows para aprovações, onboarding, compliance e operações internas.
 
----
+Em vez de apresentar só o motor de workflow em isolamento, este repositório agora demonstra como o domínio pode ser empacotado como produto, com landing page, control tower, templates, instâncias em execução, automações e trilha de auditoria.
 
-## 🧠 Sobre o projeto
+## O que este projeto demonstra
 
-Este projeto implementa um motor de execução de workflows capaz de modelar, executar e controlar fluxos de processos com estados, transições e histórico auditável.
+- modelagem de workflows com domínio tipado
+- execução de instâncias com transições válidas
+- automações orientadas a evento
+- visão operacional de gargalos e risco
+- trilha de auditoria legível
+- monorepo TypeScript com pacotes reutilizáveis
 
-A solução foi construída seguindo princípios de **Clean Architecture** e **Domain-Driven Design (DDD)**, garantindo separação de responsabilidades, baixo acoplamento e alta testabilidade.
+## Estrutura
 
-O sistema permite a criação de workflows, execução de instâncias, controle de estado, validação de transições e emissão de eventos de domínio.
+```text
+apps/
+  web/        Next.js app com landing e dashboard
+packages/
+  engine/     Core da workflow engine e snapshot de demo
+  ui/         Componentes compartilhados da interface
+```
 
----
+## Rodando localmente
 
-## ⚙️ O que é uma Workflow Engine?
+```bash
+corepack enable
+corepack pnpm install
+corepack pnpm dev
+```
 
-Uma workflow engine é um sistema responsável por gerenciar processos estruturados, definindo:
+Depois abra:
 
-- etapas (steps)
-- transições entre etapas
-- regras de execução
-- estados do processo
+- `http://localhost:3000`
+- `http://localhost:3000/dashboard`
+- `http://localhost:3000/api/v1/control-tower/snapshot`
 
-Exemplo de fluxo:
+## Scripts principais
 
-draft → review → approved  
-                ↘ rejected
+```bash
+pnpm dev
+pnpm lint
+pnpm typecheck
+pnpm test
+pnpm build
+```
 
----
+## Narrativa do produto
 
-## 🏗️ Arquitetura
+Orquestra resolve um problema recorrente em empresas com processos internos críticos: aprovações, handoffs e exceções ficam espalhados entre ferramentas demais, sem visibilidade clara de owner, etapa atual, risco e histórico decisório.
 
-O projeto segue os princípios de Clean Architecture:
+A proposta aqui é mostrar uma plataforma que:
 
-src  
-├── domain        # Regras de negócio puras  
-├── app           # Casos de uso (application layer)  
-├── infra         # Implementações (event bus, repository)  
-└── main          # Entrada da aplicação (composition root)  
+- centraliza templates de processo
+- expõe instâncias em execução com contexto real
+- transforma gargalos em sinais operacionais claros
+- conecta automação e auditoria na mesma experiência
 
----
+## Observação
 
-## 🧩 Principais conceitos implementados
-
-### 🔹 Domain Layer
-- Entidades (`Workflow`, `WorkflowInstance`)
-- Erros de domínio (`DomainError`)
-- Serviços (`WorkflowValidator`)
-- Tipos (`WorkflowHistoryEntry`)
-
----
-
-### 🔹 Application Layer
-- `CreateWorkflowUseCase`
-- `AdvanceWorkflowInstanceUseCase`
-
-Responsável por orquestrar regras de negócio sem depender de infraestrutura.
-
----
-
-### 🔹 Infrastructure Layer
-- `InMemoryWorkflowInstanceRepository`
-- `InMemoryEventBus`
-- Event Handlers
-
----
-
-## 🔁 Execução do Workflow
-
-O sistema separa:
-
-### 👉 Workflow (definição)
-Define o fluxo:
-
-draft → review → approved / rejected
-
----
-
-### 👉 WorkflowInstance (execução)
-Executa o fluxo em tempo real:
-
-- controla estado atual
-- valida transições
-- registra histórico
-- dispara eventos
-
----
-
-## 📊 Histórico auditável
-
-Cada transição é registrada com timestamp:
-
-[
-  { stepId: 'draft', timestamp: Date },
-  { stepId: 'review', timestamp: Date },
-  { stepId: 'approved', timestamp: Date }
-]
-
-Isso permite:
-
-- rastreabilidade
-- auditoria
-- análise de processos
-
----
-
-## 📡 Domain Events
-
-Eventos são gerados automaticamente durante a execução:
-
-- StepExecutedEvent
-- WorkflowCompletedEvent
-
----
-
-## 🔄 Event Bus (Pub/Sub)
-
-O sistema utiliza um Event Bus interno:
-
-eventBus.subscribe('StepExecutedEvent', handler)  
-eventBus.publish(events)  
-
-Isso permite:
-
-- desacoplamento entre domínio e reações
-- fácil integração com logs, filas ou notificações
-- arquitetura orientada a eventos
-
----
-
-## 🧩 Handlers
-
-Exemplo de handlers implementados:
-
-- LogStepExecutedHandler
-- LogWorkflowCompletedHandler
-
----
-
-## 🗄️ Repository Pattern
-
-Abstração da persistência:
-
-WorkflowInstanceRepository
-
-Implementação atual:
-
-InMemoryWorkflowInstanceRepository
-
-Facilmente substituível por banco de dados real.
-
----
-
-## 🧪 Testes
-
-Testes unitários com Vitest cobrindo:
-
-- inicialização do workflow
-- transições válidas
-- transições inválidas
-- finalização do fluxo
-
-Executar:
-
-npm run test
-
----
-
-## ▶️ Como rodar o projeto
-
-npm install  
-npm run dev  
-
----
-
-## 📊 Exemplo de saída
-
-Inicial: draft running  
-Após review: review running  
-Final: approved completed  
-
-Eventos:
-
-[EVENT] Step executed | instance=instance-1 | step=draft  
-[EVENT] Step executed | instance=instance-1 | step=review  
-[EVENT] Workflow completed | instance=instance-1  
-
----
-
-## 💡 Casos de uso reais
-
-Este tipo de engine pode ser utilizado para:
-
-- aprovação de pedidos
-- aprovação de documentos
-- onboarding de colaboradores
-- fluxo de reembolso
-- análise de processos internos
-- sistemas de tickets
-
----
-
-## 🚀 Próximos passos
-
-- API REST com Fastify
-- Persistência com PostgreSQL
-- Interface web com formulários
-- Autenticação e autorização
-- Integração com filas (Kafka / RabbitMQ)
-- Deploy com Docker
-
----
-
-## 📌 Autor
-
-Gabriel Santos
+O `README.legacy.md` foi preservado como registro da versão original do projeto, focada apenas na engine.

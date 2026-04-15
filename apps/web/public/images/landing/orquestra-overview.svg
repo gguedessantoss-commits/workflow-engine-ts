@@ -1,0 +1,67 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-overview" x1="160" y1="40" x2="1400" y2="1120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#162238"/>
+      <stop offset="1" stop-color="#0A101A"/>
+    </linearGradient>
+    <linearGradient id="panel-overview" x1="250" y1="130" x2="1350" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#182A46"/>
+      <stop offset="1" stop-color="#0E1623"/>
+    </linearGradient>
+    <linearGradient id="accent-overview" x1="970" y1="252" x2="1190" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3C56B"/>
+      <stop offset="1" stop-color="#F08648"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1200" rx="44" fill="url(#bg-overview)"/>
+  <circle cx="1320" cy="210" r="220" fill="#F3C56B" fill-opacity="0.08"/>
+  <circle cx="260" cy="1060" r="260" fill="#54C3AF" fill-opacity="0.08"/>
+  <rect x="90" y="86" width="1420" height="1028" rx="34" fill="url(#panel-overview)" stroke="#293A55"/>
+  <rect x="90" y="86" width="1420" height="64" rx="34" fill="#111A28"/>
+  <circle cx="132" cy="118" r="8" fill="#F08648"/>
+  <circle cx="158" cy="118" r="8" fill="#F3C56B"/>
+  <circle cx="184" cy="118" r="8" fill="#54C3AF"/>
+  <text x="222" y="124" fill="#E6EDF7" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">Orquestra • Overview operacional</text>
+  <rect x="128" y="190" width="356" height="202" rx="24" fill="#101B2A" stroke="#344760"/>
+  <rect x="516" y="190" width="356" height="202" rx="24" fill="#101B2A" stroke="#344760"/>
+  <rect x="904" y="190" width="468" height="202" rx="24" fill="#101B2A" stroke="#344760"/>
+  <text x="162" y="242" fill="#94A8C6" font-family="Segoe UI, Arial, sans-serif" font-size="22">Instâncias ativas</text>
+  <text x="162" y="328" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="800">18</text>
+  <text x="162" y="364" fill="#54C3AF" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">+3 hoje</text>
+  <text x="550" y="242" fill="#94A8C6" font-family="Segoe UI, Arial, sans-serif" font-size="22">Templates ativos</text>
+  <text x="550" y="328" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="800">4</text>
+  <text x="550" y="364" fill="#54C3AF" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">cobrindo áreas críticas</text>
+  <text x="938" y="242" fill="#94A8C6" font-family="Segoe UI, Arial, sans-serif" font-size="22">Pulso do workflow</text>
+  <text x="938" y="292" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="38" font-weight="800">Visão consolidada de risco e fila</text>
+  <rect x="938" y="326" width="270" height="18" rx="9" fill="#1C3148"/>
+  <rect x="938" y="326" width="196" height="18" rx="9" fill="url(#accent-overview)"/>
+  <text x="938" y="376" fill="#C9D5E6" font-family="Segoe UI, Arial, sans-serif" font-size="24">Aprovações pressionadas no fim da janela de compra</text>
+  <rect x="128" y="430" width="736" height="302" rx="28" fill="#0F1725" stroke="#344760"/>
+  <text x="164" y="480" fill="#E6EDF7" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">Gargalos por etapa</text>
+  <text x="164" y="514" fill="#92A5C1" font-family="Segoe UI, Arial, sans-serif" font-size="22">Onde o fluxo acumula espera, risco e pressão operacional</text>
+  <rect x="164" y="556" width="664" height="52" rx="18" fill="#141F31"/>
+  <rect x="164" y="626" width="664" height="52" rx="18" fill="#141F31"/>
+  <rect x="164" y="556" width="314" height="52" rx="18" fill="#2A1820"/>
+  <rect x="164" y="626" width="248" height="52" rx="18" fill="#2B2417"/>
+  <text x="188" y="590" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Aprovação final de compra</text>
+  <text x="664" y="590" fill="#F6A0A7" font-family="Segoe UI, Arial, sans-serif" font-size="22" text-anchor="end">3 itens • 1h14m</text>
+  <text x="188" y="660" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Provisionamento de TI</text>
+  <text x="664" y="660" fill="#F3C56B" font-family="Segoe UI, Arial, sans-serif" font-size="22" text-anchor="end">5 itens • 46m</text>
+  <rect x="896" y="430" width="476" height="302" rx="28" fill="#0F1725" stroke="#344760"/>
+  <text x="932" y="480" fill="#E6EDF7" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">Instâncias em andamento</text>
+  <text x="932" y="514" fill="#92A5C1" font-family="Segoe UI, Arial, sans-serif" font-size="22">Owners, contexto e próxima ação lado a lado</text>
+  <rect x="932" y="556" width="404" height="64" rx="20" fill="#141F31"/>
+  <rect x="932" y="638" width="404" height="64" rx="20" fill="#141F31"/>
+  <text x="964" y="594" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Compra emergencial • diretoria</text>
+  <text x="964" y="676" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Onboarding • TI aguardando laptop</text>
+  <rect x="128" y="768" width="1244" height="292" rx="28" fill="#0F1725" stroke="#344760"/>
+  <text x="164" y="818" fill="#E6EDF7" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">Timeline operacional</text>
+  <text x="164" y="852" fill="#92A5C1" font-family="Segoe UI, Arial, sans-serif" font-size="22">Eventos recentes conectando workflow, automação e auditoria</text>
+  <line x1="264" y1="908" x2="264" y2="1006" stroke="#40536C" stroke-width="4"/>
+  <circle cx="264" cy="914" r="12" fill="#F3C56B"/>
+  <circle cx="264" cy="960" r="12" fill="#54C3AF"/>
+  <circle cx="264" cy="1004" r="12" fill="#F08648"/>
+  <text x="304" y="922" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">09:26 • Instância enviada para aprovação final</text>
+  <text x="304" y="962" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">09:18 • Handoff automático executado</text>
+  <text x="304" y="1008" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">09:04 • Bloqueio operacional registrado</text>
+</svg>

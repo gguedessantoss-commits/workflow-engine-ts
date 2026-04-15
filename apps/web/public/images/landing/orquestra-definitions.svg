@@ -1,0 +1,63 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-definitions" x1="120" y1="84" x2="1470" y2="1100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101B2D"/>
+      <stop offset="1" stop-color="#0A101A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1200" rx="44" fill="url(#bg-definitions)"/>
+  <circle cx="1244" cy="172" r="240" fill="#58C7B2" fill-opacity="0.08"/>
+  <circle cx="264" cy="1048" r="240" fill="#F08648" fill-opacity="0.08"/>
+  <rect x="86" y="82" width="1428" height="1036" rx="34" fill="#0E1623" stroke="#30435C"/>
+  <rect x="86" y="82" width="1428" height="64" rx="34" fill="#111A28"/>
+  <text x="134" y="124" fill="#E8EEF7" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">Orquestra • Biblioteca de templates</text>
+  <text x="134" y="214" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800">Templates prontos para aprovações, onboarding e compliance</text>
+  <text x="134" y="264" fill="#97AAC6" font-family="Segoe UI, Arial, sans-serif" font-size="24">A mesma engine modela processos diferentes sem recriar o domínio.</text>
+  <rect x="134" y="324" width="404" height="306" rx="28" fill="#111C2D" stroke="#30435C"/>
+  <rect x="598" y="324" width="404" height="306" rx="28" fill="#111C2D" stroke="#30435C"/>
+  <rect x="1062" y="324" width="404" height="306" rx="28" fill="#111C2D" stroke="#30435C"/>
+  <text x="170" y="380" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="800">Aprovação de compras</text>
+  <text x="170" y="418" fill="#F3C56B" font-family="Segoe UI, Arial, sans-serif" font-size="22">Procurement + Finance</text>
+  <rect x="170" y="460" width="110" height="34" rx="17" fill="#1D3248"/>
+  <rect x="292" y="460" width="130" height="34" rx="17" fill="#1D3248"/>
+  <rect x="170" y="512" width="160" height="34" rx="17" fill="#1D3248"/>
+  <rect x="342" y="512" width="120" height="34" rx="17" fill="#2B2417"/>
+  <text x="194" y="483" fill="#CFE0F4" font-family="Segoe UI, Arial, sans-serif" font-size="18">Solicitação</text>
+  <text x="318" y="483" fill="#CFE0F4" font-family="Segoe UI, Arial, sans-serif" font-size="18">Financeiro</text>
+  <text x="194" y="535" fill="#CFE0F4" font-family="Segoe UI, Arial, sans-serif" font-size="18">Diretoria</text>
+  <text x="366" y="535" fill="#F3C56B" font-family="Segoe UI, Arial, sans-serif" font-size="18">Resultado</text>
+  <text x="634" y="380" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="800">Onboarding de colaborador</text>
+  <text x="634" y="418" fill="#58C7B2" font-family="Segoe UI, Arial, sans-serif" font-size="22">People ops + IT</text>
+  <rect x="634" y="460" width="90" height="34" rx="17" fill="#1D3248"/>
+  <rect x="736" y="460" width="100" height="34" rx="17" fill="#1D3248"/>
+  <rect x="848" y="460" width="140" height="34" rx="17" fill="#1D3248"/>
+  <rect x="634" y="512" width="150" height="34" rx="17" fill="#2B2417"/>
+  <rect x="796" y="512" width="122" height="34" rx="17" fill="#1D3248"/>
+  <text x="658" y="483" fill="#CFE0F4" font-family="Segoe UI, Arial, sans-serif" font-size="18">Intake</text>
+  <text x="764" y="483" fill="#CFE0F4" font-family="Segoe UI, Arial, sans-serif" font-size="18">Gestor</text>
+  <text x="874" y="483" fill="#CFE0F4" font-family="Segoe UI, Arial, sans-serif" font-size="18">Provisionamento</text>
+  <text x="658" y="535" fill="#F3C56B" font-family="Segoe UI, Arial, sans-serif" font-size="18">Orientação</text>
+  <text x="820" y="535" fill="#CFE0F4" font-family="Segoe UI, Arial, sans-serif" font-size="18">Conclusão</text>
+  <text x="1098" y="380" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="800">Compliance de fornecedor</text>
+  <text x="1098" y="418" fill="#F08648" font-family="Segoe UI, Arial, sans-serif" font-size="22">Legal + Segurança</text>
+  <rect x="1098" y="460" width="90" height="34" rx="17" fill="#1D3248"/>
+  <rect x="1200" y="460" width="100" height="34" rx="17" fill="#1D3248"/>
+  <rect x="1312" y="460" width="120" height="34" rx="17" fill="#1D3248"/>
+  <rect x="1098" y="512" width="150" height="34" rx="17" fill="#2A1820"/>
+  <text x="1122" y="483" fill="#CFE0F4" font-family="Segoe UI, Arial, sans-serif" font-size="18">Intake</text>
+  <text x="1226" y="483" fill="#CFE0F4" font-family="Segoe UI, Arial, sans-serif" font-size="18">Jurídico</text>
+  <text x="1338" y="483" fill="#CFE0F4" font-family="Segoe UI, Arial, sans-serif" font-size="18">Segurança</text>
+  <text x="1122" y="535" fill="#F6A0A7" font-family="Segoe UI, Arial, sans-serif" font-size="18">Remediação</text>
+  <rect x="134" y="684" width="1332" height="352" rx="28" fill="#111C2D" stroke="#30435C"/>
+  <text x="170" y="742" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">Blueprints de processo</text>
+  <text x="170" y="778" fill="#97AAC6" font-family="Segoe UI, Arial, sans-serif" font-size="22">Casos de uso que ajudam a defender o valor do produto em poucos minutos.</text>
+  <rect x="170" y="830" width="388" height="150" rx="22" fill="#172538"/>
+  <rect x="606" y="830" width="388" height="150" rx="22" fill="#172538"/>
+  <rect x="1042" y="830" width="388" height="150" rx="22" fill="#172538"/>
+  <text x="202" y="886" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Exceção de reembolso</text>
+  <text x="202" y="924" fill="#CFE0F4" font-family="Segoe UI, Arial, sans-serif" font-size="20">Intake, risco, financeiro e payout auditável.</text>
+  <text x="638" y="886" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Compras emergenciais</text>
+  <text x="638" y="924" fill="#CFE0F4" font-family="Segoe UI, Arial, sans-serif" font-size="20">Controle de janela, owner e aprovação final.</text>
+  <text x="1074" y="886" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Provisionamento interno</text>
+  <text x="1074" y="924" fill="#CFE0F4" font-family="Segoe UI, Arial, sans-serif" font-size="20">RH, gestor e TI operando no mesmo fluxo.</text>
+</svg>

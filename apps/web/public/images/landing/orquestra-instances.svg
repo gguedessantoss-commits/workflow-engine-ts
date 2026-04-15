@@ -1,0 +1,40 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-instances" x1="180" y1="60" x2="1450" y2="1120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#132035"/>
+      <stop offset="1" stop-color="#091018"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1200" rx="44" fill="url(#bg-instances)"/>
+  <circle cx="1360" cy="232" r="224" fill="#58C7B2" fill-opacity="0.08"/>
+  <rect x="86" y="82" width="1428" height="1036" rx="34" fill="#0E1623" stroke="#30435C"/>
+  <rect x="86" y="82" width="1428" height="64" rx="34" fill="#111A28"/>
+  <text x="134" y="124" fill="#E8EEF7" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">Orquestra • Instâncias em execução</text>
+  <text x="134" y="214" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800">Fila operacional com histórico, owner e próxima ação</text>
+  <text x="134" y="266" fill="#97AAC6" font-family="Segoe UI, Arial, sans-serif" font-size="24">Cada run é exibido como um objeto de produto e não como um log perdido no back-end.</text>
+  <rect x="134" y="326" width="1332" height="210" rx="28" fill="#111C2D" stroke="#30435C"/>
+  <rect x="166" y="362" width="172" height="34" rx="17" fill="#203246"/>
+  <rect x="350" y="362" width="124" height="34" rx="17" fill="#2A1820"/>
+  <text x="190" y="385" fill="#CFE0F4" font-family="Segoe UI, Arial, sans-serif" font-size="18">Compra emergencial</text>
+  <text x="378" y="385" fill="#F6A0A7" font-family="Segoe UI, Arial, sans-serif" font-size="18">Em risco</text>
+  <text x="166" y="446" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="800">Aprovação final da diretoria</text>
+  <text x="166" y="490" fill="#CFE0F4" font-family="Segoe UI, Arial, sans-serif" font-size="22">Owner: Fábio Lima • Solicitante: Marina Sousa • Última atualização 09:26</text>
+  <text x="166" y="524" fill="#97AAC6" font-family="Segoe UI, Arial, sans-serif" font-size="20">Próxima ação: coletar decisão final antes do fechamento da janela de compra.</text>
+  <rect x="134" y="566" width="1332" height="210" rx="28" fill="#111C2D" stroke="#30435C"/>
+  <rect x="166" y="602" width="150" height="34" rx="17" fill="#203246"/>
+  <rect x="328" y="602" width="142" height="34" rx="17" fill="#2B2417"/>
+  <text x="190" y="625" fill="#CFE0F4" font-family="Segoe UI, Arial, sans-serif" font-size="18">Onboarding</text>
+  <text x="356" y="625" fill="#F3C56B" font-family="Segoe UI, Arial, sans-serif" font-size="18">Atenção</text>
+  <text x="166" y="686" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="800">Provisionamento de TI aguardando equipamento</text>
+  <text x="166" y="730" fill="#CFE0F4" font-family="Segoe UI, Arial, sans-serif" font-size="22">Owner: Nina Costa • Solicitante: Intake automático • Última atualização 09:04</text>
+  <text x="166" y="764" fill="#97AAC6" font-family="Segoe UI, Arial, sans-serif" font-size="20">Próxima ação: resolver exceção de inventário e liberar kit de entrada.</text>
+  <rect x="134" y="806" width="1332" height="230" rx="28" fill="#111C2D" stroke="#30435C"/>
+  <text x="170" y="862" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">Histórico de transição da instância</text>
+  <line x1="232" y1="912" x2="232" y2="992" stroke="#41546D" stroke-width="4"/>
+  <circle cx="232" cy="918" r="12" fill="#58C7B2"/>
+  <circle cx="232" cy="952" r="12" fill="#58C7B2"/>
+  <circle cx="232" cy="986" r="12" fill="#F3C56B"/>
+  <text x="272" y="926" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">08:12 • Solicitação registrada</text>
+  <text x="272" y="960" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">08:37 • Financeiro concluiu análise</text>
+  <text x="272" y="994" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">09:26 • Diretoria acionada para decisão final</text>
+</svg>
